@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="top-buttons">
+        <button onclick="switchAttendanceType('college')">College Attendance</button>
+        <button onclick="switchAttendanceType('lab')">Lab Attendance</button>
+        <button onclick="switchAttendanceType('library')">Library Attendance</button>
+    </div>
+
+    <h1 id="main-title">Attendance Tracker</h1>
+
+    <div class="form-section">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" placeholder="Enter name" required>
+
+        <label for="attendance-status">Attendance Status:</label>
+        <select id="attendance-status">
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+            <option value="late">Late</option>
+        </select>
+
+        <button onclick="addAttendance()">Add Attendance</button>
+    </div>
+
+    <input type="text" id="search-bar" placeholder="Search by name..." onkeyup="searchAttendance()">
+
+    <h2>Attendance List</h2>
+    <table id="attendance-list">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Total</th>
+            <th>Present</th>
+            <th>Percentage</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="summary" class="summary-section">
+        <p>Total Records: <span id="total-count">0</span></p>
+        <p>Present Count: <span id="present-count">0</span></p>
+        <p>Overall Present Percentage: <span id="present-percentage">0%</span></p>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
