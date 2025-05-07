@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Page - Bansal Institute Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BANSAL INSTITUTE OF ENGINEERING AND TECHNOLOGY</h1>
+    <h2>Academic Resources</h2>
+
+    <form id="filterForm">
+      <select id="branchSelect" required>
+        <option value="" disabled selected>Select Branch</option>
+        <option value="CSE">Computer Science</option>
+        <option value="ECE">Artificila Intelligence</option>
+        <option value="ME">Artificial Intelligence and Machine Learning</option>
+      </select>
+
+      <select id="yearSelect" required>
+        <option value="" disabled selected>Select Year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+      </select>
+
+      <button type="submit">Load Subjects</button>
+    </form>
+
+    <!-- Static Subject Section Admin-Configured -->
+    <div id="subjectSection" class="subject-section" style="display: none;">
+      <h3>Core Subjects and PDFs</h3>
+
+      <div class="subject-entry">
+        <label>Subject 1:</label>
+        <span>DATA STRUCTURE</span>
+        <a href="Dsa.pdf" class="view-link" target="_blank">View PDF</a>
+      </div>
+
+      <div class="subject-entry">
+        <label>Subject 2:</label>
+        <span>OPERATING SYSTEM</span>
+        <a href="Operating_System.pdf" class="view-link" target="_blank">View PDF</a>
+      </div>
+
+      <div class="subject-entry">
+        <label>Subject 3:</label>
+        <span>AUTOMATA AND COMPUTABILITY</span>
+        <a href="AUTOMATa" class="view-link" target="_blank">View PDF</a>
+      </div>
+
+      <div class="subject-entry">
+        <label>Subject 4:</label>
+        <span>MACHINE LEARNING</span>
+        <a href="MACHINE LEARNING" class="view-link" target="_blank">View PDF</a>
+      </div>
+      <div class="subject-entry">
+        <label>Subject 3:</label>
+        <span>DATA AND ANALYSIS OF ALGORITHMS</span>
+        <a href="DAA" class="view-link" target="_blank">View PDF</a>
+      </div>
+      <div class="subject-entry">
+        <label>Subject 3:</label>
+        <span>DATABASE MANAGEMENT SYSTEM</span>
+        <a href="DBMS" class="view-link" target="_blank">View PDF</a>
+      </div>
+      <div class="subject-entry">
+        <label>Subject 3:</label>
+        <span>OBJECT ORIENTED PROGRAMMING WITH JAVA</span>
+        <a href="object-oriented-programming-using-java.pdf" class="view-link" target="_blank">View PDF</a>
+      </div>
+      <div class="subject-entry">
+        <label>Subject 3:</label>
+        <span>CLOUD COMPUTING AND NETWORK SECURITY</span>
+        <a href="CLOUD COMPUTING" class="view-link" target="_blank">View PDF</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

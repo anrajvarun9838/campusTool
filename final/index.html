@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Study Planner</h1>
+    <nav>
+      <button onclick="loadComponent('taskList')">📋 Tasks</button>
+      <button onclick="loadComponent('calendar')">📆 Calendar</button>
+      <button onclick="loadComponent('notes')">📝 Notes</button>
+      <button onclick="loadComponent('examReminder')">📚 Exam Reminder</button>
+      <button onclick="loadComponent('pomodoro')">🍅 Pomodoro</button>
+
+    </nav>
+  </header>
+
+  <main id="app-container">
+    <!-- Component content will be loaded here -->
+  </main>
+
+  <footer>
+    <p>© 2025 Campus Tools — Stay Organized</p>
+  </footer>
+
+  <script src="stdyScript.js"></script>
+</body>
+</html>

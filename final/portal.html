@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Academic Resources - Bansal Institute Portal</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>BANSAL INSTITUTE OF ENGINEERING AND TECHNOLOGY</h1>
+        <h2>Academic Resources</h2>
+        <form id="filterForm">
+            <select id="branchSelect" required>
+                <option value="" disabled selected>Select Branch</option>
+                <option value="CSE">Computer Science</option>
+                <option value="ECE">Electrical Engineering</option>
+                <option value="ME">Mechanical Engineering</option>
+            </select>
+            <select id="yearSelect" required>
+                <option value="" disabled selected>Select Year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+            <button type="submit">Load Subjects</button>
+        </form>
+
+        <!-- Static Subject Section -->
+        <div id="subjectSection" class="subject-section" style="display: none;">
+            <h3>Core Subjects and PDFs</h3>
+            <div class="subject-entry">
+                <label>Subject 1:</label>
+                <span>DATA STRUCTURE</span>
+                <a href="Dsa.pdf" class="view-link" target="_blank">View PDF</a>
+            </div>
+            <div class="subject-entry">
+                <label>Subject 2:</label>
+                <span>OPERATING SYSTEM</span>
+                <a href="Operating_System.pdf" class="view-link" target="_blank">View PDF</a>
+            </div>
+            <div class="subject-entry">
+                <label>Subject 2:</label>
+                <span>DBMS</span>
+                <a href="DBMS.unknown" class="view-link" target="_blank">View PDF</a>
+            </div>
+            <!-- Add more subjects as needed -->
+        </div>
+    </div>
+
+    <script src="portal.js"></script>
+</body>
+</html>
