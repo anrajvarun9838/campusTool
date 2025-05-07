@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notification Portal</title>
+  <link rel="stylesheet" href="C:\Users\ASUS\OneDrive\Desktop\BIET_merged_website\Attendence\styles.css" />
+</head>
+<body>
+
+<nav style="background-color: #333; padding: 10px;">
+  <a href="C:\Users\ASUS\OneDrive\Desktop\BIET_merged_website\Tools\index.html" style="color: white; margin-right: 15px; text-decoration: none;">🏠 Planner</a>
+  <a href="C:\Users\ASUS\OneDrive\Desktop\BIET_merged_website\PDF\index.html" style="color: white; margin-right: 15px; text-decoration: none;">📝 Register</a>
+  <a href="C:\Users\ASUS\OneDrive\Desktop\BIET_merged_website\Attendence\index.html" style="color: white; text-decoration: none;">🔔 Notifications</a>
+</nav>
+
+<div class="container">
+  <h2>Search Notifications</h2>
+  <div class="filters">
+    <input type="text" id="searchKeyword" placeholder="Title (Keywords)">
+    <select id="searchMonth">
+      <option value="">Month</option>
+      <script>
+        const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        months.forEach((m, i) => document.write(`<option value="${i+1}">${m}</option>`));
+      </script>
+    </select>
+    <select id="searchYear">
+      <option value="">Year</option>
+      <script>
+        for (let y = 2023; y <= 2026; y++) {
+          document.write(`<option value="${y}">${y}</option>`);
+        }
+      </script>
+    </select>
+    <select id="searchRelated">
+      <option value="">Related To</option>
+      <option value="Exam">Exam</option>
+      <option value="Event">Event</option>
+      <option value="General">General</option>
+    </select>
+    <button onclick="filterNotifications()">Search</button>
+    <button onclick="resetFilters()">Reset</button>
+  </div>
+
+  <h2>Notification List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>S.No.</th>
+        <th>Title</th>
+        <th>Posted On</th>
+      </tr>
+    </thead>
+    <tbody id="notificationTableBody"></tbody>
+  </table>
+</div>
+
+<script src="C:\Users\ASUS\OneDrive\Desktop\BIET_merged_website\Attendence\scripts.js"></script>
+</body>
+</html>
